@@ -638,13 +638,16 @@ var SITE = {
     // Write your bio between the quotes, and add a LinkedIn link if you want one.
     { name: "Rishi Kumpatla", email: "knrishi2010@gmail.com", phone: "425-666-8786",
       bio: "Rishi is a high school student who likes figuring out how things work and then building them himself. He spends his free time on coding projects and electronics, and he enjoys turning a rough idea into something that really runs. He helped start this nonprofit because he wants to use what he learns to help people in his community.",
-      linkedin: "https://www.linkedin.com/in/narasimha-rishi-kumpatla-563839405/" },
+      linkedin: "https://www.linkedin.com/in/narasimha-rishi-kumpatla-563839405/" ,
+      Instagram: "https://www.instagram.com/rlshl_/" },
     { name: "Adit Joglekar", email: "joglekaradit12@gmail.com", phone: "425-244-4867",
-      bio: "",
-      linkedin: "" },
+      bio: "Adit is a high school student at North Creek High School who is interested in medicine and public health. He cares about making sure everyone in his community has access to enough food, and he wants to raise awareness about poverty and food insecurity. He hopes to help build a healthier community through service.",
+      linkedin: "",
+      Instagram: "https://www.instagram.com/adjoe224/" },
     { name: "Aarav Puvvadi", email: "aaravpuvvadi@gmail.com", phone: "425-546-7655",
-      bio: "",
-      linkedin: "" }
+      bio: "Aarav is a high school student at North Creek High School who is interested in pursuing a career in surgery. He spends his time fundraising and volunteering, and he cares about raising awareness of poverty and hunger. He hopes to make a difference in his community by helping people access the food and support they need.",
+      linkedin: "",
+      Instagram: "https://www.instagram.com/ap_1729_/" }
   ]
 };
 /* ===== END EDIT ===== */
@@ -764,6 +767,13 @@ var SITE = {
       a.target = "_blank";
       a.rel = "noopener";
       card.appendChild(a);
+    }
+    if (f.instagram) {
+    var a = el("a", "btn ghost small", "Instagram");
+    a.href = f.instagram;
+    a.target = "_blank";
+    a.rel = "noopener";
+    card.appendChild(a);
     }
     box.appendChild(card);
   });

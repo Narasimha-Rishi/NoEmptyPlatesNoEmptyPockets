@@ -1,4 +1,11 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
 <title>NoEmptyPlatesNoEmptyPockets</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -180,7 +187,7 @@ footer .brandline { display: flex; align-items: center; gap: 16px; }
 /* Upcoming drive */
 .drives { margin-bottom: 48px; display: grid; gap: 16px; }
 .drive { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; padding: 24px 28px; border-radius: 20px; border: 2px solid var(--fg); background: var(--red); }
-.drive .date { flex: none; width: 96px; padding: 10px 8px; text-align: center; display: grid; background: var(--surface); border: 2px solid var(--fg); border-radius: 16px; }
+.drive .date { flex: none; min-width: 96px; padding: 10px 14px; text-align: center; display: grid; background: var(--surface); border: 2px solid var(--fg); border-radius: 16px; }
 .drive .date span { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
 .drive .date strong { font-family: var(--font-display); font-size: 2.5rem; line-height: 1.05; }
 .drive-text { flex: 1 1 260px; min-width: 0; display: grid; gap: 4px; justify-items: start; }
@@ -227,6 +234,10 @@ footer .brandline { display: flex; align-items: center; gap: 16px; }
 
 /* Extra blocks: kit, FAQ, recaps, quotes */
 .block { margin-top: 64px; }
+.volunteer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 28px; padding: 24px 28px; max-width: 760px; border-radius: 20px; border: 2px solid var(--fg); background: var(--green); }
+.volunteer-text { flex: 1 1 260px; min-width: 0; display: grid; gap: 4px; }
+.volunteer-text h3 { font-size: 1.4rem; font-weight: 800; }
+.volunteer-text p { overflow-wrap: anywhere; }
 .help-card a { font-weight: 600; }
 .kit { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; counter-reset: step; max-width: 760px; }
 .kit li { counter-increment: step; display: flex; align-items: flex-start; gap: 16px; padding: 16px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }
@@ -386,7 +397,7 @@ footer strong { color: var(--fg); font-family: var(--font-display); font-size: 1
           </article>
           <article class="help-card">
             <h3>Apna Bazar</h3>
-            <p>Hosting our food drive on Saturday, November 21 in Bothell.</p>
+            <p>Hosting our food drive on November 21 and 22, from 10 AM to 8 PM, in Bothell.</p>
           </article>
           <article class="help-card">
             <h3>North Creek High School</h3>
@@ -486,20 +497,21 @@ footer strong { color: var(--fg); font-family: var(--font-display); font-size: 1
     <section class="wrap">
       <div class="page-head">
         <p class="label">How to help</p>
-        <h1 class="page-title" style="margin-top:12px">Three ways to join us</h1>
+        <h1 class="page-title" style="margin-top:12px">Ways to join us</h1>
         <p class="page-intro">You do not need to be a student at North Creek to take part.</p>
       </div>
       <div class="drives">
         <p class="label">Upcoming drives</p>
         <article class="drive">
-          <div class="date" aria-hidden="true"><span>Nov</span><strong>21</strong></div>
+          <div class="date" aria-hidden="true"><span>Nov</span><strong>21&ndash;22</strong></div>
           <div class="drive-text">
             <h2>Food drive at Apna Bazar</h2>
-            <p>Saturday, November 21</p>
+            <p>Saturday, November 21 and Sunday, November 22</p>
             <p class="addr">20710 Bothell Everett Hwy, Bothell, WA 98012</p>
-            <p>Contact the team for the drive time.</p>
+            <p><strong>10 AM to 8 PM</strong> both days</p>
             <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Apna+Bazar+20710+Bothell+Everett+Hwy+Bothell+WA+98012" target="_blank" rel="noopener">Get directions</a>
-            <a class="btn ghost" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Food+drive+at+Apna+Bazar&amp;dates=20261121/20261122&amp;location=20710+Bothell+Everett+Hwy%2C+Bothell%2C+WA+98012&amp;details=NoEmptyPlatesNoEmptyPockets+food+drive.+Bring+non-perishable+food+and+care+package+items." target="_blank" rel="noopener">Add to Google Calendar</a>
+            <a class="btn ghost" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Food+drive+at+Apna+Bazar&amp;dates=20261121T100000/20261121T200000&amp;ctz=America%2FLos_Angeles&amp;location=20710+Bothell+Everett+Hwy%2C+Bothell%2C+WA+98012&amp;details=NoEmptyPlatesNoEmptyPockets+food+drive.+Bring+non-perishable+food+and+care+package+items." target="_blank" rel="noopener">Add Nov 21 to calendar</a>
+            <a class="btn ghost" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Food+drive+at+Apna+Bazar&amp;dates=20261122T100000/20261122T200000&amp;ctz=America%2FLos_Angeles&amp;location=20710+Bothell+Everett+Hwy%2C+Bothell%2C+WA+98012&amp;details=NoEmptyPlatesNoEmptyPockets+food+drive.+Bring+non-perishable+food+and+care+package+items." target="_blank" rel="noopener">Add Nov 22 to calendar</a>
           </div>
         </article>
       </div>
@@ -529,6 +541,23 @@ footer strong { color: var(--fg); font-family: var(--font-display); font-size: 1
           <p>Tell a friend, a teacher or a neighbor about our drives. More people means more plates filled.</p>
         </article>
       </div>
+      <div class="block" id="volunteer">
+        <div class="section-head">
+          <p class="label">Volunteer</p>
+          <h2>Volunteer with us</h2>
+          <p>Give a few hours at one of our drives. Sign up with our volunteer form.</p>
+        </div>
+        <article class="volunteer">
+          <div class="volunteer-text">
+            <h3>Apna Bazar food drive</h3>
+            <p>Saturday, November 21 and Sunday, November 22, 10 AM to 8 PM</p>
+            <p>20710 Bothell Everett Hwy, Bothell, WA 98012</p>
+          </div>
+          <a class="btn primary" href="https://tinyurl.com/Volunteering-Opportunity-Form" target="_blank" rel="noopener">Sign up to volunteer</a>
+        </article>
+        <p class="note">More volunteer opportunities will be posted here. Questions? <a href="#contact">Contact the team</a>.</p>
+      </div>
+
       <div class="block">
         <div class="section-head">
           <p class="label">Host your own drive</p>
@@ -556,7 +585,7 @@ footer strong { color: var(--fg); font-family: var(--font-display); font-size: 1
           </details>
           <details>
             <summary>Where do I drop off a donation?</summary>
-            <p>Our next drive is Saturday, November 21 at Apna Bazar, 20710 Bothell Everett Hwy, Bothell, WA 98012. For other drop-off options, contact the team.</p>
+            <p>Our next drive is Saturday, November 21 and Sunday, November 22, from 10 AM to 8 PM, at Apna Bazar, 20710 Bothell Everett Hwy, Bothell, WA 98012. For other drop-off options, contact the team.</p>
           </details>
           <details>
             <summary>Where does the food go?</summary>
@@ -622,7 +651,7 @@ var SITE = {
   foodCollected: 0,        // pounds collected so far
   packageGoal: 300,        // care packages we want to assemble
   packagesAssembled: 0,    // care packages assembled so far
-  startDate: "",           // first day of our 30 days as "YYYY-MM-DD" (for example "2026-11-21"); fills in the day counter
+  startDate: "2026-11-18",           // first day of our 30 days as "YYYY-MM-DD" (for example "2026-11-21"); fills in the day counter
   contactEmail: "",        // team email, shown on the Contact page when filled in
   instagram: "https://www.instagram.com/no.mpty.plates.no.mpty.pockets/",   // shown on the Contact page and footer, leave empty to hide
   // Recaps appear on the Progress page. Remove the // at the start of the example, fill it in, and add one per drive.
@@ -833,7 +862,7 @@ var SITE = {
   if (!SITE.updates.length) {
     var empty = el("div", "recap");
     empty.appendChild(el("h3", "", "Our first recap is coming"));
-    empty.appendChild(el("p", "", "After our November 21 drive at Apna Bazar, we will post here what we collected."));
+    empty.appendChild(el("p", "", "After our November 21 and 22 drive at Apna Bazar, we will post here what we collected."));
     recaps.appendChild(empty);
   }
   SITE.updates.forEach(function (u) {
@@ -887,7 +916,7 @@ var SITE = {
   var MAX_TILT = 14;
   var MIN_FADE = 0.5;
 
-  var items = Array.prototype.slice.call(document.querySelectorAll(".goal, .ring-card, .help-card, .founder, .general-contact, .drive, .deadline, .profile, .hosa, .social, .recap, .quote"));
+  var items = Array.prototype.slice.call(document.querySelectorAll(".goal, .ring-card, .help-card, .founder, .general-contact, .drive, .deadline, .profile, .hosa, .social, .recap, .quote, .volunteer"));
   items.forEach(function (e) { e.classList.add("wheel-item"); });
 
   var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -917,4 +946,5 @@ var SITE = {
 })();
 </script>
 
-</body></html>
+</body>
+</html>

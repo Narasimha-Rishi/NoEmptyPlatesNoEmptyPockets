@@ -238,6 +238,14 @@ footer .brandline { display: flex; align-items: center; gap: 16px; }
 .volunteer-text { flex: 1 1 260px; min-width: 0; display: grid; gap: 4px; }
 .volunteer-text h3 { font-size: 1.4rem; font-weight: 800; }
 .volunteer-text p { overflow-wrap: anywhere; }
+/* Cash donations */
+.cash { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 32px; padding: 28px; max-width: 760px; border-radius: 20px; border: 2px solid var(--fg); background: var(--blue); }
+.cash-qr { flex: none; width: 200px; max-width: 100%; padding: 12px; background: var(--surface); border: 2px solid var(--fg); border-radius: 16px; }
+.cash-qr img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.cash-text { flex: 1 1 260px; min-width: 0; display: grid; gap: 10px; }
+.cash-text h3 { font-size: 1.4rem; font-weight: 800; }
+.cash-price { display: inline-flex; align-items: baseline; gap: 10px; }
+.cash-price strong { font-family: var(--font-display); font-weight: 800; font-size: 3rem; line-height: 1; }
 .help-card a { font-weight: 600; }
 .kit { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; counter-reset: step; max-width: 760px; }
 .kit li { counter-increment: step; display: flex; align-items: flex-start; gap: 16px; padding: 16px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }
@@ -541,6 +549,24 @@ footer strong { color: var(--fg); font-family: var(--font-display); font-size: 1
           <p>Tell a friend, a teacher or a neighbor about our drives. More people means more plates filled.</p>
         </article>
       </div>
+      <div class="block" id="cash">
+        <div class="section-head">
+          <p class="label">Donate money</p>
+          <h2>Fund a care package</h2>
+          <p>Can't give food or time? A cash donation helps us assemble care packages.</p>
+        </div>
+        <article class="cash">
+          <div class="cash-qr">
+            <img src="donate-qr.jpg" width="200" height="200" alt="QR code for cash donations. Scan it with your phone camera.">
+          </div>
+          <div class="cash-text">
+            <h3>Scan to donate</h3>
+            <p class="cash-price"><strong>$5</strong><span>fills one care package</span></p>
+            <p>Each care package costs $5, but any donation helps. Whatever you can give goes toward filling a package for someone who needs it.</p>
+          </div>
+        </article>
+      </div>
+
       <div class="block" id="volunteer">
         <div class="section-head">
           <p class="label">Volunteer</p>
@@ -916,7 +942,7 @@ var SITE = {
   var MAX_TILT = 14;
   var MIN_FADE = 0.5;
 
-  var items = Array.prototype.slice.call(document.querySelectorAll(".goal, .ring-card, .help-card, .founder, .general-contact, .drive, .deadline, .profile, .hosa, .social, .recap, .quote, .volunteer"));
+  var items = Array.prototype.slice.call(document.querySelectorAll(".goal, .ring-card, .help-card, .founder, .general-contact, .drive, .deadline, .profile, .hosa, .social, .recap, .quote, .volunteer, .cash"));
   items.forEach(function (e) { e.classList.add("wheel-item"); });
 
   var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
